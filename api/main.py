@@ -29,6 +29,4 @@ def home():
         response_text = response.choices[0].text.strip()
 
         # Return response text to template
-        return render_template('home.html', response_text=response_text)
-    else:
-        return render_template('home.html')
+        return render_template( response_text=response_text)
