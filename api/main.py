@@ -10,6 +10,7 @@ openai.api_key = "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"
 # Define home route
 @app.route('/', methods=['GET', 'POST'])
 def home():
+    return render_template("home.html")
     if request.method == 'POST':
         # Get user input from form
         user_input = request.form['user_input']
